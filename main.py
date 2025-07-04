@@ -6,14 +6,6 @@ def get_book_text(file_path):
 def print_book():
     return get_book_text("books/frankenstein.txt")
 
-    
-def get_num_words():
-   num_words = 0
-   words = print_book().split()
+from stats import get_num_words
 
-   for word in words:
-       num_words += 1
-   message = f"{num_words} words found in the document"
-   return message
-
-print(get_num_words())
+print(get_num_words(print_book()))
