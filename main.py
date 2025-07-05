@@ -6,6 +6,7 @@ def get_book_text(file_path):
 def print_book():
     return get_book_text("books/frankenstein.txt")
 
-from stats import get_num_words
+from stats import get_num_words, total_characters
 
 print(get_num_words(print_book()))
+print(total_characters(print_book()))
