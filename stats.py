@@ -4,7 +4,7 @@ def get_num_words(book):
 
    for word in words:
        num_words += 1
-   message = f"{num_words} words found in the document"
+   message = f"Found {num_words} total words"
    return message
 
 def total_characters(book):

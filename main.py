@@ -17,6 +17,5 @@ print("--------- Character Count -------")
 for item in char_num_list(total_characters(print_book())):
     char = item["char"]
     if char.isalpha():
-        print(item["char"],": ", item["num"])
+        print(f"{item["char"]}: {item["num"]}")
 print("============= END ===============")
-
