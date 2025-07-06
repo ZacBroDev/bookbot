@@ -17,4 +17,19 @@ def total_characters(book):
         if char in char_directory:
             char_directory[char] = (char_directory[char] + 1)
 
-    return print(char_directory)
+    return char_directory
+
+def sort_on(items):
+    return items["num"]
+
+def char_num_list(book):
+    new_list = []
+    for char,num in book.items():
+        new_dict = {}
+        new_dict["char"] = char
+        new_dict["num"] = num
+        new_list.append(new_dict)
+    new_list.sort(reverse=True, key=sort_on)
+    return new_list
+
+
