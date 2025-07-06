@@ -1,3 +1,4 @@
+# count total number of words in book and print message #
 def get_num_words(book):
    num_words = 0
    words = book.split()
@@ -7,6 +8,7 @@ def get_num_words(book):
    message = f"Found {num_words} total words"
    return message
 
+# counting the amount each character appears in book #
 def total_characters(book):
     char_directory = {}
     char_list = list(book.lower())
@@ -19,9 +21,11 @@ def total_characters(book):
 
     return char_directory
 
+# create key for sorting in def charm_num_list(book) #
 def sort_on(items):
     return items["num"]
 
+# create list of dictionaries to sort characters and count #
 def char_num_list(book):
     new_list = []
     for char,num in book.items():

@@ -1,14 +1,16 @@
+# pull book file and get text from book #
 def get_book_text(file_path):
     with open(file_path) as f:
         file_contents = f.read()
         return file_contents
-    
+
 def print_book():
     return get_book_text("books/frankenstein.txt")
 
+# pull: word count // character dictionary // list of dictionaries of each character #
 from stats import get_num_words, total_characters, char_num_list
 
-
+# printing report #
 print("============ BOOKBOT ============")
 print("Analyzing book found at books/frankenstein.txt...")
 print("----------- Word Count ----------")
